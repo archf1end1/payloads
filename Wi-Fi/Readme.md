@@ -1,0 +1,1 @@
+Change the sender_email and sender_password to your email and password and receiver_email to the email in which you want to get the mail
